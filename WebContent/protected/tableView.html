@@ -1,0 +1,11 @@
+<h1>{{ app.message }}</h1>
+<h2>Tournament {{tournamentId}} {{tournamentName}}</h2>
+<h2>Lives Scores {{liveScore}}</h2>
+<table>
+	<tr>
+		<th>Player</th><th>Hole</th><th>Score</th>
+	</tr>
+	<tr ng-repeat="player in app.tableData">		
+		<td>{{player.firstName}}</td><td>{{player.hole}}</td><td>{{player.score}}</td>
+	</tr>
+</table>

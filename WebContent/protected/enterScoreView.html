@@ -1,0 +1,20 @@
+<h1>{{ app.message }}</h1>
+<h2>Tournament {{tournamentId}} {{tournamentName}}</h2>
+<form id="enterScoreForm">
+	<table>
+		<tr><td>Hole</td>
+			<td>
+				<select id="holeSelect" ng-model="holeSelect" ng-options="hole.name for hole in availableHoles track by hole.value" required></select>
+			</td>
+		</tr>
+		<tr>
+			<td>Score</td>
+			<td>
+				<input type="number" name="score" id="score" ng-model="score" required>
+			</td>
+		</tr>
+		<tr>
+			<td></td><td><button id="enterScoreButton" ng-click="submit()">Enter</button></td>
+		</tr>
+	</table>
+</form>

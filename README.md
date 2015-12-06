@@ -3,6 +3,8 @@ AngularJS web app to demonstrate websockets with MongoDB backend via nodejs
 
 Project consists of web app frontend using socket.io to make connection with a nodejs script performing MongoDB database actions.
 
+Architecturally, yes it's bad (don't need 2 webservers) but used for Proof Of Concept purposes.  And yes, should be using Maven to manage build.
+
 DB Schema
 _________
 

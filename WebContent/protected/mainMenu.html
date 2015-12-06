@@ -1,0 +1,13 @@
+<h1>{{ app.message }}</h1>
+<table>
+<tr>
+	<td>View Tables</td>
+	<td>Live Tournaments</td>
+</tr>
+<tr ng-repeat="tournament in app.tournaments">
+	<td><a id="tableView_{{tournament.id}}" href="#TableView/{{tournament.id}}/false/{{tournament.name}}">{{tournament.name}}</a></td>
+	<td ng-if="tournament.status == 'STARTED'">
+		<a id="liveTournament_{{tournament.id}}" href="#JoinedTournamentView/{{tournament.id}}/true/{{tournament.name}}">{{tournament.name}}</a>
+	</td>
+</tr>        
+</table>

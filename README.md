@@ -7,6 +7,7 @@ DB Schema
 _________
 
 player - collection of player details and player scores
+
 tournament - collection of golf tournaments
 
 > db.player.find().pretty()
